@@ -2,8 +2,8 @@
 # remove any variables that are leftover in the workspace
 rm(list=ls())
 # fetch the BRFSS data
-source('http://www.openintro.org/stat/data/cdc.R')
-save(cdc, 'cdc.RData')
+# source('http://www.openintro.org/stat/data/cdc.R')
+# save(cdc, file='cdc.RData')
 load('cdc.RData')
 
 # view the names of the variables
@@ -14,7 +14,6 @@ head(cdc)
 tail(cdc)
 
 ## Exercise 1 ##
-blah
 
 ##### Part II: Summaries and tables #####
 #make a numerical summary of the weight variable
@@ -85,7 +84,7 @@ seq(from=10, to=1, by=-1)
 #length.out determines the length of vector, useful for plotting
 seq(from=1, to=10, length.out=15)
 
-t = seq(from=1, to=1, length.out=1000)
+t = seq(from=-1, to=1, length.out=1000)
 plot(y=t^2, x=t, type= 'l')
 
 
